@@ -1,0 +1,13 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 450,
+    "data": {"url":"https://raw.githubusercontent.com/VinhMai123/3179/main/data.csv"},
+    "mark": "bar",
+    "encoding": {
+        "x":{"field": "Institution"},
+        "y":{"field": "Score","type":"quantitative"}
+    }
+
+
+}
