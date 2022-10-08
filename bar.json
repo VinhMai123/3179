@@ -2,7 +2,12 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 800,
     "height": 450,
+    "title":"Top 10 Ranked Universities",
     "data": {"url":"https://raw.githubusercontent.com/VinhMai123/3179/main/data.csv"},
+    "transform": [
+        {"window": [{"op": "count", "as": "count"}]},
+        {"filter": "datum.count <= 10"}
+    ],
     "mark": "bar",
     "encoding": {
         "x":{"field": "Institution"},
