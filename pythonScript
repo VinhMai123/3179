@@ -20,13 +20,16 @@ for i in range(1,len(rows)):
     else:
         data[key] = 1
 
-#write data to new csv
-header = ['Country','Total']
-with open('totals.csv','w') as csvfile:
-    filewriter = csv.writer(csvfile, delimiter = ',')
-    filewriter.writerow(header)
-    for key in data:
-        filewriter.writerow([key,data[key]])
+for key in data:
+    print(key,data[key])
 
-csvfile.close()
+#write data to new csv
+#header = ['Country','Total']
+#with open('totals.csv','w') as csvfile:
+    #filewriter = csv.writer(csvfile, delimiter = ',')
+    #filewriter.writerow(header)
+    #for key in data:
+        #filewriter.writerow([key,data[key]])
+
+#csvfile.close()
 
