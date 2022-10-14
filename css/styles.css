@@ -1,0 +1,15 @@
+.vis-container {
+    width: 100%;
+}
+
+.description-left {
+    padding-left: 50px;
+}
+
+.description-right {
+    padding-right: 100px;
+}
+.description h2,
+h1 {
+    margin-top: 0px;
+}
