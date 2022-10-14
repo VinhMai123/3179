@@ -19,7 +19,7 @@
     {"calculate": "datum.Total+0.1", "as":"sum_countries" },
     {"calculate": "datum.Total", "as":"actual" }],
 
-    "mark": {"type": "geoshape"},
+    "mark": {"type": "geoshape", "stroke": "#757575","strokeWidth": 0.5},
     "encoding": {
         "color":{
             "field": "sum_countries", 

@@ -11,7 +11,7 @@
     "mark": "bar",
     "encoding": {
         "x":{"field": "Institution"},
-        "y":{"field": "Score","type":"quantitative"}
+        "y":{"field": "Score","type":"quantitative", "sort": "Score"}
     }
 
 
